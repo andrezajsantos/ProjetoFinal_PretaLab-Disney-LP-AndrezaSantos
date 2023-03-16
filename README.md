@@ -12,4 +12,4 @@ Bem vinda ao repositório do projeto final do módulo de Lógica de Programaçã
   4. [extra] Por fim, publique no Netlify!
   
  
-Projeto ainda em andamento, aguardando aulas de css (estilização) para poder dar continuidade.
+Este projeto continua em construção.
