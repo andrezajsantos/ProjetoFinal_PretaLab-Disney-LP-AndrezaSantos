@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <title>Projeto Final 👩🏾‍💻 </title>
+  </head>
+  <body>
+    <h1>Módulo 1: Lógica de Programação</h1>
+    <h1>👩🏾‍💻</h1>
+
+    <main>
+      <p>
+        Este é o projeto de conclusão do módulo de lógica de programação do
+        curso O Poder do Futuro, uma parceria da PretaLab com a Disney. Aqui
+        tivemos acesso ao conhecimento de lógica com Javascript: variáveis e
+        constantes, operadores aritméticos e lógicos, estruturas condicionais e
+        de repetição. Este projetinho tem como intuito demonstrar através da
+        pratica o conhecimento adiquirido.
+      </p>
+
+      <div id="content">
+        <section id="projeto1">
+          
+          <h2>Calculadora Básica</h2>
+         
+            
+          <input type="number" class="inputCalc" id="numero1Soma"  required />
+          <input class="inputCalc" id="numero2Soma" type="number" required />
+          <button class="buttonCalc" onclick="somar()">SOMAR</button>
+          <p class="resultado">Resultado da Soma: <b id="resultadoSoma"></b></p>
+
+          <input class="inputCalc" id="numero1Sub" type="number" required />
+          <input class="inputCalc" id="numero2Sub" type="number" required />
+          <button class="buttonCalc" onclick="subtrair()">SUBTRAIR</button>
+          <p class="resultado">Resultado da Subtração: <b id="resultadoSub"></b></p>
+
+          <input class="inputCalc" id="numero1Mult" type="number" required />
+          <input class="inputCalc" id="numero2Mult" type="number" required />
+          <button class="buttonCalc" onclick="multiplicar()">
+            MULTIPLICAR
+          </button>
+          <p class="resultado">Resultado da Multiplicação: <b id="resultadoMult"></b></p>
+
+          <input class="inputCalc" id="numero1Div" type="number" required />
+          <input class="inputCalc" id="numero2Div" type="number" required />
+          <button class="buttonCalc" onclick="dividir()">DIVIDIR</button>
+          <p class="resultado">Resultado da Divisão: <b id="resultadoDiv"></b></p>
+
+
+          <input class="inputCalc" id="raiz1" type="number" required />
+          <button class="buttonCalc" onclick="raiz()">RAIZ</button>
+          <p class="resultado">Resultado da Raiz: <b id="resultadoraiz"></b></p>
+
+
+          <input class="inputCalc" id="log1" type="number" required />
+          <button class="buttonCalc" onclick="log()">LOG</button>
+          <p class="resultado">Resultado do log: <b id="resultadolog"></b></p>
+
+          <input class="inputCalc" id="Tan" type="number" required />
+          <button class="buttonCalc" onclick="Tan()">TANGENTE</button>
+          <p class="resultado">Resultado da tangente: <b id="resultadotangente"></b></p>
+
+          <button class="buttonCalc" id="limpar" onclick="limpar()" type="reset" value="reset">
+          LIMPAR </button>
+            
+        </section>
+
+        <section id="projeto2">
+          <h2>Calculadora de Médias</h2>
+
+          <div id="contentCalcMedias">
+            <div id="notas">
+              <div class="nota">
+                <label for="nota1">Nota 1</label>
+                <input class="inputNota" id="nota1" type="number" required />
+              </div>
+
+              <div class="nota">
+                <label for="nota2">Nota 2</label>
+                <input class="inputNota" id="nota2" type="number" required />
+              </div>
+
+              <div class="nota">
+                <label for="nota3">Nota 3</label>
+                <input class="inputNota" id="nota3" type="number" required />
+              </div>
+
+              <div class="nota">
+                <label for="nota4">Nota 4</label>
+                <input class="inputNota" id="nota4" type="number" required />
+              </div>
+            </div>
+
+            <button id="btnSituacao" onclick="calcularMedia()">
+              Qual a situação da estudante?
+            </button>
+            <p id="situacaoAluno">
+          </div>
+
+          <h2>Calculadora de IMC</h2>
+
+          <div id="contentCalcMedias">
+            <div id="notas">
+              <div class="nota">
+                <label for="alt"> INFORME A ALTURA (exemplo 1.60): </label>
+                <input class="inputNota" id="alt" type="text" required />
+              </div>
+
+              <div class="nota">
+                <label for="kg">INFORME O PESO (exemplo: 95.6): </label>
+                <input class="inputNota" id="kg" type="text" required />
+              </div>
+            <div>
+              <button id="btnSituacao" onclick="calcularimc()">
+               Calcular IMC
+              </button>
+              <p id="imc">
+            </p>
+            <div>
+        </section>
+      </div>
+
+      <section id="projeto3">
+        <h2>Calculadora de Áreas </h2>
+        <div id="contentCalcMedias">
+          <div id="notas">
+            <div class="nota">
+              <label for="raio">Informe o valor do raio:</label>
+              <input class="inputNota" id="raio" type="number" required />
+              
+            <button class="buttonCalc" onclick="circulo()">CALCULAR</button>
+            <p class="resultado">Resultado da área do Circulo: <b id="resultadocirculo"></b></p>
+          
+
+          <div>
+            <label for="altura">Informe o altura:</label>
+              <input class="inputCalc" id="altura" type="number" required />
+            
+              <label for="base">Informe a base:</label>
+              <input class="inputCalc" id="base" type="number" required />
+            
+          <button class="buttonCalc" onclick="triangulo()">CALCULAR</button>
+          <p class="resultado">Resultado da área do Triangulo: <b id="resultadotriangulo"></b></p>
+       
+          <div>
+            <label for="altura2">Informe o altura:</label>
+              <input class="inputCalc" id="altura2" type="number" required />
+            
+              <label for="base2">Informe a base:</label>
+              <input class="inputCalc" id="base2" type="number" required />
+          
+          <button class="buttonCalc" onclick="retangulo()">CALCULAR</button>
+          <p class="resultado">Resultado da área do retangulo: <b id="resultadoretangulo"></b></p>
+
+
+          <div class="nota">
+            <label for="lado">Informe o valor do lado:</label>
+            <input class="inputNota" id="lado" type="number" required />
+          
+          <button class="buttonCalc" onclick="quadrado()">CALCULAR</button>
+          <p class="resultado">Resultado da área do Quadrado: <b id="resultadoquadrado"></b></p>
+        </div>
+
+
+        <div>
+          <label for="basemaior">Informe a base maior:</label>
+            <input class="inputCalc" id="basemaior" type="number" required />
+          
+            <label for="basemenor">Informe a base menor:</label>
+            <input class="inputCalc" id="basemenor" type="number" required />
+          
+            <label for="altura3">Informe a altura:</label>
+            <input class="inputCalc" id="altura3" type="number" required />
+        
+        <button class="buttonCalc" onclick="trapezio()">CALCULAR</button>
+        <p class="resultado">Resultado da área do trapezio: <b id="resultadotrapezio"></b></p>
+
+
+        <div>
+          <label for="dmaior">Informe a diagonal maior:</label>
+            <input class="inputCalc" id="dmaior" type="number" required />
+          
+            <label for="dmenor">Informe a diagonal menor:</label>
+            <input class="inputCalc" id="dmenor" type="number" required />
+          
+        <button class="buttonCalc" onclick="losango()">CALCULAR</button>
+        <p class="resultado">Resultado da área do Losango: <b id="resultadolosango"></b></p>
+
+          </div>
+
+      </section>
+
+      <section id="projeto4">
+        <h2>Calculadora de Idade </h2>
+            <div id="contentCalcMedias">
+              <div id="notas">
+              <div class="nota">
+                <label for="anopassado"> Informe o ano que você nasceu:</label>
+                <input class="inputNota" id="anopassado" type="text" required />
+              </div>
+
+              <div class="nota">
+                <label for="anoatual">Informe o ano atual:</label>
+                <input class="inputNota" id="anoatual" type="text" required />
+            </div>
+          
+          </div>
+            <div>
+              <button id="btnSituacao" onclick="calculoidade()">
+               Calcular Idade:
+              </button>
+              <p class="resultado">Sua Idade é: <b id="idade"></b></p>
+            </p>
+          </div>
+
+
+      </section>
+
+    </main>
+    
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    <script type="text/javascript" src="js/media.js"></script>
+    <script type="text/javascript" src="js/calculadoraarea.js"></script>
+    <script type="text/javascript" src="js/calculadoraimc.js"></script>
+    <script type="text/javascript" src="js/calculadoraidade.js"></script>
+  </body>
+</html>
